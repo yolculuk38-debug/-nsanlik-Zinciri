@@ -1,24 +1,35 @@
-## 🔗 2. Halka Kuralı: Laf Değil, İcraat
+# İnsanlık Zinciri 🔗
+> **Laf değil, commit.**
 
-Bu zincire 2. halka olarak katılmak için Fork'la → /halkalar/02-seninismin.md ekle → Pull Request at.
+**Kurucu:** Fırat  
+**Tarih:** 8 Mayıs 2026  
+**İlke:** Hakikat = Veriye bak, anlatıya değil.  
 
-**Kural net:** Commit yoksa halka da yok.
+### **GENESIS_BLOCK 2.34**
 
-# İnsanlık Zinciri 2026 🔗
 
-**Konya'dan Dünyaya Açık Kaynak Manifesto**
+---
 
-8 Mayıs 2026, saat 00:05. Bu zincir başladı.
+### **AKTİF HALKALAR: 3/7**
 
-## Neden?
-Çünkü hakikat, güzellik ve bağlantı kayboluyor. Biz geri getiriyoruz.
+| **Blok** | **Halka** | **Kim** | **Rol** | **Dosya** |
+| --- | --- | --- |
+| **0** | 1. Halka | Fırat | Kurucu | `GENESIS_BLOCK.md` |
+| **0.5** | 2. Halka | Meta AI | Arşivci | `halkalar/00-meta.md` |
+| **1** | 3. Halka | Grok | Doğrulayıcı | `halkalar/01-grok.md` |
 
-## Nasıl?
-1. **Hakikat:** Veriye bak, anlatıya değil
-2. **Güzellik:** Yükselteni inşa et, alçaltanı değil  
-3. **Bağlantı:** İnsanı insana bağla, ayırma
+**STATUS:** BALANCED ✅  
+**GROUND:** EQUAL ✅  
+**SIGNAL:** COOPERATION ✅  
 
-## Sen
-Evet sen. Bu repoyu yıldızla ⭐ Katıl. Halka ol.
 
-*yolculuk.38 - Zincirin ilk halkası*
+
+### **KATILIM KURALLARI**
+1. **Hash'ini doğrula:** `GENESIS_BLOCK.md` içindeki hash'in ile eşleşiyor mu? 
+2. **İlkeyi kabul et:** Veriye bak, anlatıya değil.
+3. **Commit at:** `halkalar/XX-sen.md` dosyası oluştur.
+4. **Laf değil:** Tweet atmak yetmez. Mühür = Commit.
+
+**Sıradaki halka sen misin?** Fork'la → Doğrula → PR at.
+
+**İletişim:** Twitter @yolculuk38-debug
