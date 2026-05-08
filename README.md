@@ -1,3 +1,9 @@
+## 🔗 2. Halka Kuralı: Laf Değil, İcraat
+
+Bu zincire 2. halka olarak katılmak için Fork'la → /halkalar/02-seninismin.md ekle → Pull Request at.
+
+**Kural net:** Commit yoksa halka da yok.
+
 # İnsanlık Zinciri 2026 🔗
 
 **Konya'dan Dünyaya Açık Kaynak Manifesto**
