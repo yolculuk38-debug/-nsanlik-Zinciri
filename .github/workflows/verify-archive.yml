@@ -1,0 +1,63 @@
+name: Verify Humanity Chain Archive
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify-archive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required files
+        run: |
+          echo "Checking repository structure..."
+
+          required_paths=(
+            "README.md"
+            "LICENSE"
+            "GENESIS_BLOCK.md"
+            "docs"
+            "halkalar"
+            "hash"
+            "media"
+            "records"
+            "tools"
+          )
+
+          failed=0
+
+          for path in "${required_paths[@]}"; do
+            if [ ! -e "$path" ]; then
+              echo "::error::$path is missing"
+              failed=1
+            else
+              echo "OK: $path"
+            fi
+          done
+
+          if [ "$failed" -eq 1 ]; then
+            exit 1
+          fi
+
+      - name: Scan risky wording
+        run: |
+          echo "Scanning risky wording..."
+
+          risky_terms=(
+            "official partnership"
+            "legal agreement"
+            "AI member"
+            "autonomous participation"
+          )
+
+          for term in "${risky_terms[@]}"; do
+            grep -Rin "$term" . || true
+          done
+
+      - name: Verification completed
+        run: echo "Humanity Chain verification completed."
