@@ -1,22 +1,31 @@
 # Humanity Chain Records System
 
-This directory contains structured interaction records submitted through the Humanity Chain workflow system.
+## Purpose
+
+The records system is used to organize, verify, and archive interaction records within Humanity Chain.
 
 ## Structure
 
-- pending/ → Records awaiting review
-- verified/ → Verified interaction records
-- archive/ → Permanent archived records
-- models/ → Records grouped by AI model
-- events/ → Event-based interaction collections
+### pending/
 
-## Workflow
+Contains unverified or newly submitted records.
 
-Submission
-→ Review
-→ Verification
-→ Archive
+### verified/
 
-## Purpose
+Contains reviewed and verified records.
 
-The records system is designed to provide transparent, traceable, and structured archival of human-AI interactions.
+### archive/
+
+Contains historical or finalized records preserved for long-term reference.
+
+## Record Lifecycle
+
+pending → verified → archive
+
+## Principles
+
+- transparency
+- traceability
+- chronological documentation
+- open verification
+- permanent archival structure
