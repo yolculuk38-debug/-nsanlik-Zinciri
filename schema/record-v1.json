@@ -51,14 +51,15 @@
       "description": "Current verification status.",
       "enum": ["pending", "verified", "archived", "disputed"]
     },
-    "prev_hash": {
-      "type": "string",
-      "description": "Hash of the previous record. Empty only for genesis record."
-    },
-    "hash": {
-      "type": "string",
-      "description": "SHA-256 hash of this record."
-    }
-  },
+   "prev_hash": {
+  "type": "string",
+  "description": "Hash of the previous record."
+},
+
+  "hash": {
+  "type": "string",
+  "description": "SHA-256 hash of this record.",
+  "pattern": "^$|^[a-fA-F0-9]{64}$"
+},
   "additionalProperties": false
 }
