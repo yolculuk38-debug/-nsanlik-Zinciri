@@ -1,9 +1,10 @@
 {
+  "record_id": "HC-2026-0002",
   "id": "HC-2026-0002",
   "timestamp": "2026-05-12T09:45:00Z",
   "title": "Multi AI Witness Record",
   "source": "Humanity Chain",
-  "content": "Initial multi-model archive validation test.",
+  "content": "Initial multi-model archive witness record",
   "witnesses": [
     "ChatGPT",
     "Claude",
