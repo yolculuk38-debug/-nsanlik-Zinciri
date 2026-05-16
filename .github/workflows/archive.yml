@@ -39,4 +39,5 @@ jobs:
         run: python src/generate_index.py
 
       - name: Generate QR Codes
-        run: python src/qr.py
+        run: python src/qr.py --batch
+      
