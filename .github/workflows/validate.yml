@@ -8,17 +8,15 @@ on:
       - 'src/**'
       - '.github/workflows/validate.yml'
   pull_request:
-    paths:
-      - 'records/**'
-      - 'schema/**'
-      - 'src/**'
-      - '.github/workflows/validate.yml'
+    branches:
+      - main
 
 permissions:
   contents: read
 
 jobs:
   validate:
+    name: Humanity Chain Validation
     runs-on: ubuntu-latest
 
     steps:
