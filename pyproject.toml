@@ -9,7 +9,8 @@ description = "Verification and archive tooling for Insanlik Zinciri records"
 requires-python = ">=3.10"
 dependencies = [
   "jsonschema==4.17.3",
-  "qrcode[pil]==7.4.2",
+  "qrcode==7.4.2",
+  "pillow>=9.1.0",
 ]
 
 [tool.setuptools]

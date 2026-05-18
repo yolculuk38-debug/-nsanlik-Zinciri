@@ -1,3 +1,5 @@
-# Runtime dependencies used by project scripts and CLI
+# Runtime dependencies for CLI/scripts and CI workflows.
+# Keep this list minimal and aligned with pyproject.toml.
 jsonschema==4.17.3
-qrcode[pil]==7.4.2
+qrcode==7.4.2
+pillow>=9.1.0
