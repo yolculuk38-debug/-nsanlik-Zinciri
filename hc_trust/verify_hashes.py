@@ -102,10 +102,12 @@ def find_record_files(search_path="."):
     return []
 
 
-def main():
+def main(argv=None):
     """Main entry point."""
-    if len(sys.argv) > 1:
-        search_path = sys.argv[1]
+    argv = sys.argv[1:] if argv is None else argv
+
+    if len(argv) > 0:
+        search_path = argv[0]
     else:
         search_path = "records"
     
