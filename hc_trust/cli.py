@@ -10,17 +10,35 @@ from hc_trust import qr as qr_mod
 from hc_trust import verify_hashes as verify_hashes_mod
 
 
+class HcTrustArgumentParser(argparse.ArgumentParser):
+    """ArgumentParser with clearer error hints for hc-trust."""
+
+    def error(self, message):
+        command_hint = (
+            "\nTry one of: verify, hash, qr, normalize. "
+            "Use 'hc-trust <command> --help' for command-specific usage."
+        )
+        super().error(f"{message}{command_hint}")
+
+
 def build_parser():
-    parser = argparse.ArgumentParser(
+    parser = HcTrustArgumentParser(
         prog="hc-trust",
         description="Humanity Chain trust utilities.",
         epilog=(
-            "Examples:\n"
+            "Commands:\n"
+            "  verify      Verify content_hash values in JSON records\n"
+            "  hash        Calculate SHA-256 of a file\n"
+            "  qr          Generate verification QR codes\n"
+            "  normalize   Normalize JSON records and refresh content_hash\n"
+            "\n"
+            "Quick examples:\n"
             "  hc-trust verify\n"
-            "  hc-trust verify records/pending\n"
             "  hc-trust hash records/pending/HC-2026-0002.json\n"
             "  hc-trust qr --batch\n"
-            "  hc-trust normalize records"
+            "  hc-trust normalize records\n"
+            "\n"
+            "Tip: run 'hc-trust <command> --help' for detailed usage examples."
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
@@ -30,7 +48,13 @@ def build_parser():
         "verify",
         help="Verify content_hash values in JSON records",
         description="Verify content_hash values for a record file or directory.",
-        epilog="Example: hc-trust verify records/pending",
+        epilog=(
+            "Examples:\n"
+            "  hc-trust verify\n"
+            "  hc-trust verify records\n"
+            "  hc-trust verify records/pending"
+        ),
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     verify_parser.add_argument(
         "path",
@@ -39,7 +63,6 @@ def build_parser():
         help="Record file or directory to verify (default: records)",
     )
 
-    # Backward-compatible alias retained for existing scripts.
     verify_hashes_parser = subparsers.add_parser(
         "verify-hashes",
         help="(Deprecated alias) same as verify",
@@ -57,7 +80,12 @@ def build_parser():
         "hash",
         help="Calculate SHA-256 of a file",
         description="Calculate SHA-256 hash for any file path.",
-        epilog="Example: hc-trust hash records/pending/HC-2026-0002.json",
+        epilog=(
+            "Examples:\n"
+            "  hc-trust hash records/pending/HC-2026-0002.json\n"
+            "  hc-trust hash README.md"
+        ),
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     hash_parser.add_argument("file", help="File path to hash")
 
@@ -85,7 +113,12 @@ def build_parser():
         "normalize",
         help="Normalize records/*.json files",
         description="Normalize records by setting missing fields and recalculating content_hash.",
-        epilog="Example: hc-trust normalize records",
+        epilog=(
+            "Examples:\n"
+            "  hc-trust normalize\n"
+            "  hc-trust normalize records"
+        ),
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     normalize_parser.add_argument(
         "records_dir",
@@ -107,7 +140,12 @@ def main(argv=None):
     if args.command == "hash":
         file_path = Path(args.file)
         if not file_path.exists():
-            print(f"Hata: Dosya bulunamadı: {file_path}")
+            print(f"Error: file not found: {file_path}")
+            print("Tip: use a valid file path, e.g. 'hc-trust hash README.md'")
+            return 1
+        if file_path.is_dir():
+            print(f"Error: expected a file but got a directory: {file_path}")
+            print("Tip: pass a file path, not a folder.")
             return 1
         print(f"SHA256: {hash_mod.calculate_sha256(file_path)}")
         return 0
@@ -129,7 +167,8 @@ def main(argv=None):
         return normalize_mod.main([args.records_dir])
 
     parser.print_help()
-    return 0
+    print("\nError: missing command. Choose one of: verify, hash, qr, normalize.")
+    return 1
 
 
 if __name__ == "__main__":
