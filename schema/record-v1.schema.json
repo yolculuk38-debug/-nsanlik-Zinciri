@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://humanitychain.dev/schema/record-v1.schema.json",
   "title": "Humanity Chain Record v1",
   "type": "object",
   "required": ["record_id", "created_at", "title", "record_type", "witness_type", "author", "content_hash", "archive_ref", "verification_status"],
