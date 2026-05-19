@@ -89,6 +89,7 @@ PYTHONPATH=src python -m hc_trust.cli verify records
 - Limitations and risks: [`docs/limitations-and-risks.md`](docs/limitations-and-risks.md)
 - Record format: [`docs/record-format.md`](docs/record-format.md)
 - Architecture roadmap (planned): [`docs/architecture-roadmap.md`](docs/architecture-roadmap.md)
+- Release automation plan: [`docs/release-automation.md`](docs/release-automation.md)
 - examples: [`examples/`](examples/)
 - AI witness example: [`examples/ai_witness_example.json`](examples/ai_witness_example.json)
 
