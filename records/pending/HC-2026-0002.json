@@ -1,24 +1,24 @@
 {
-  "record_id": "HC-2026-0000-0002",
-  "id": "HC-2026-0000-0002",
-  "created_at": "2026-05-14T10:30:00Z",
-  "record_type": "ai_witness",
-  "witness_type": "multi",
-  "author": "Fatih",
-  "content_hash": "7fdd78c9832ea1545921e60cf3b8524e0118dce7db242fbb54aefed8381fe0a3",
   "archive_ref": "pending_archive",
-  "verification_status": "draft",
+  "author": "Fatih",
+  "content": "Initial multi-model archive witness record.",
+  "content_hash": "7fdd78c9832ea1545921e60cf3b8524e0118dce7db242fbb54aefed8381fe0a3",
+  "created_at": "2026-05-14T10:30:00Z",
+  "hash": "",
+  "id": "HC-2026-0000-0002",
+  "prev_hash": "",
+  "record_id": "HC-2026-0000-0002",
+  "record_type": "ai_witness",
+  "source": "Humanity Chain",
+  "status": "pending",
   "timestamp": "2026-05-12T09:45:00Z",
   "title": "Multi AI Witness Record",
-  "source": "Humanity Chain",
-  "content": "Initial multi-model archive witness record.",
+  "verification_status": "draft",
+  "witness_type": "multi",
   "witnesses": [
     "ChatGPT",
     "Claude",
     "Grok",
     "Meta AI"
-  ],
-  "status": "pending",
-  "prev_hash": "",
-  "hash": ""
+  ]
 }

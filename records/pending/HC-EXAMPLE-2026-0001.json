@@ -1,22 +1,22 @@
 {
-  "record_id": "HC-EXAMPLE-2026-0001",
-  "id": "HC-EXAMPLE-2026-0001",
-  "created_at": "2026-05-14T10:35:00Z",
-  "record_type": "ai_witness",
-  "witness_type": "ai",
-  "author": "Fatih",
-  "content_hash": "740f84dec83cce227ff4b6fb4280b088834dda8a632fa6c20250c829b80188dc",
   "archive_ref": "pending_archive",
-  "verification_status": "draft",
+  "author": "Fatih",
+  "content": "Example archive verification record for Humanity Chain.",
+  "content_hash": "740f84dec83cce227ff4b6fb4280b088834dda8a632fa6c20250c829b80188dc",
+  "created_at": "2026-05-14T10:35:00Z",
+  "hash": "",
+  "id": "HC-EXAMPLE-2026-0001",
+  "prev_hash": "",
+  "record_id": "HC-EXAMPLE-2026-0001",
+  "record_type": "ai_witness",
+  "source": "Humanity Chain",
+  "status": "pending",
   "timestamp": "2026-05-12T10:00:00Z",
   "title": "Example AI Witness Record",
-  "source": "Humanity Chain",
-  "content": "Example archive verification record for Humanity Chain.",
+  "verification_status": "draft",
+  "witness_type": "ai",
   "witnesses": [
     "ChatGPT",
     "Claude"
-  ],
-  "status": "pending",
-  "prev_hash": "",
-  "hash": ""
+  ]
 }
