@@ -57,3 +57,8 @@ Planned/future design directions:
 All items in this roadmap are planned/future work.
 
 They are explicitly not implemented production behavior in the current HC:// TRUST LAYER version.
+
+## Related Documentation
+
+- Related governance process: [AI-Assisted Review and Controlled Automation](./ai-assisted-review.md)
+
