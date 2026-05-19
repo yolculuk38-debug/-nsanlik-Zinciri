@@ -43,7 +43,9 @@ Sample verification values:
 pip install -r requirements.txt
 python src/validator.py examples
 python src/hash.py examples/ai_witness_example.json
-python src/qr.py HC-CHATGPT-2026-0001
+# Demo: text-only QR verification path example (do not commit generated image files)
+python src/qr.py HC-CHATGPT-2026-0001 --output qr/HC-CHATGPT-2026-0001-demo.png
+# Example output path only: qr/HC-CHATGPT-2026-0001-demo.png
 ```
 
 ## Documentation And Examples

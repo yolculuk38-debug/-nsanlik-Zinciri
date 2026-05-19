@@ -30,6 +30,24 @@ Each QR reference may include:
 - Archive status
 - Date created
 
+## Demo Policy (Text-Only)
+
+When demonstrating QR generation in this repository:
+
+- Document command examples in Markdown.
+- Show expected output paths as text.
+- Do **not** commit generated binary QR images (`.png`, `.jpg`, etc.).
+
+Example (documentation-only):
+
+```bash
+python src/qr.py HC-CHATGPT-2026-0001 --output qr/HC-CHATGPT-2026-0001-demo.png
+```
+
+Expected output path (example only):
+
+`qr/HC-CHATGPT-2026-0001-demo.png`
+
 ## Security Notice
 
 Users should verify that QR links point to the official Humanity Chain archive domain or GitHub Pages address.

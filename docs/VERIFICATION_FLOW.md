@@ -61,6 +61,7 @@ timeline/
 ### Step 4 — QR Reference
 
 Optional QR references may be attached for easier access and verification.
+For repository demos, keep this step text-only: document the QR command and expected output path, but do not commit generated PNG/JPG/binary QR files.
 
 Purpose:
 
