@@ -60,5 +60,6 @@ They are explicitly not implemented production behavior in the current HC:// TRU
 
 ## Related Documentation
 
+- Experimental trust score foundation: [HC:// Experimental Trust Score Foundation](./trust-score.md)
 - Related governance process: [AI-Assisted Review and Controlled Automation](./ai-assisted-review.md)
 
