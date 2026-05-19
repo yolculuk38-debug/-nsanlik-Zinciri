@@ -70,7 +70,6 @@ jobs:
               /^examples\/.*\.md$/,
               /^timeline\/.*\.md$/,
               /^halkalar\/.*\.md$/,
-              /^SECURITY\.md$/,
               /^ROADMAP\.md$/,
               /^GENESIS_BLOCK\.md$/
             ];
@@ -79,20 +78,31 @@ jobs:
               /^src\//,
               /^schema\//,
               /^\.github\/workflows\//,
-              /^tools\//,
-              /^pyproject\.toml$/,
+              /^SECURITY\.md$/,
+              /^CODEOWNERS$/,
               /^requirements\.txt$/,
-              /^test_.*\.py$/,
-              /^VERSION$/
+              /^package\.json$/,
+              /^pnpm-lock\.yaml$/
             ];
 
             const changedFiles = files.map(file => file.filename);
             const touchesManualArea = changedFiles.some(path => alwaysManualPatterns.some(pattern => pattern.test(path)));
             const allInDocsScope = changedFiles.length > 0 && changedFiles.every(path => docsOnlyPatterns.some(pattern => pattern.test(path)));
             const docsOnly = allInDocsScope && !touchesManualArea;
+            const hasDocsChanges = changedFiles.some(path => docsOnlyPatterns.some(pattern => pattern.test(path)));
+            const mixedDocsAndManual = touchesManualArea && hasDocsChanges;
 
-            const toAdd = docsOnly ? ['docs-auto'] : ['manual-review'];
-            const toRemove = docsOnly ? ['manual-review'] : ['docs-auto'];
+            const toAdd = docsOnly
+              ? ['docs-auto']
+              : mixedDocsAndManual
+                ? ['manual-review', 'docs-auto']
+                : ['manual-review'];
+
+            const toRemove = docsOnly
+              ? ['manual-review']
+              : mixedDocsAndManual
+                ? []
+                : ['docs-auto'];
 
             await github.rest.issues.addLabels({
               owner,
@@ -112,7 +122,7 @@ jobs:
             }
 
             if (!docsOnly) {
-              core.info('Manual review required: auto-merge not enabled.');
+              core.info('Manual review required: auto-merge is disabled for non-docs-only PRs.');
               return;
             }
 

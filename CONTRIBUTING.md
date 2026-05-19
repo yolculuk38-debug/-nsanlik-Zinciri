@@ -92,7 +92,10 @@ Any PR that changes sensitive or executable surfaces is labeled `manual-review`,
 - `src/`
 - `schema/`
 - `.github/workflows/`
-- `tools/`
-- dependency/runtime files (`pyproject.toml`, `requirements.txt`, `VERSION`)
+- `SECURITY.md`
+- `CODEOWNERS`
+- dependency/runtime files (`requirements.txt`, `package.json`, `pnpm-lock.yaml`)
+
+If a PR includes both documentation changes and protected-path changes, `manual-review` takes precedence and the PR must not be auto-merged.
 
 If there is uncertainty, the policy defaults to `manual-review`.
