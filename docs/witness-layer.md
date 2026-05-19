@@ -58,3 +58,7 @@ Typical role:
 - Preserve witness metadata in stable, machine-readable formats.
 - Keep witness entries attributable and time-bounded.
 - Use witness context as a complement to hash/provenance validation.
+
+## Related Drafts
+
+- [Experimental Signed Witness Record Format](./signed-witness-format.md)

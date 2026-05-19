@@ -42,7 +42,7 @@ Planned/future design directions:
 
 - RFC 8785 canonical JSON research and implementation planning
 - partitioned records directory layout design
-- witness signature array design
+- witness signature array design (see [Experimental Signed Witness Record Format](./signed-witness-format.md))
 - client-side verification prototype
 
 ## v0.3 Priorities (Planned)
