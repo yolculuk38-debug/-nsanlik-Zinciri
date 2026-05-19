@@ -49,3 +49,10 @@ Using multiple perspectives helps reduce blind spots by combining:
 - and human contextual judgment.
 
 The objective is stronger review quality, not autonomous decision-making.
+
+
+## Related Documentation
+
+- Experimental trust score foundation: [HC:// Experimental Trust Score Foundation](./trust-score.md)
+- Reviewer registry and independent review pool: [Reviewer Registry and Independent Review Pool](./reviewer-registry.md)
+- Architecture roadmap (planned): [Architecture Roadmap](./architecture-roadmap.md)

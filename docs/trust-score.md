@@ -107,3 +107,8 @@ This document defines conceptual foundations only.
 - No automated trust scoring is implemented here.
 - No validation logic is changed.
 - No schema structure is changed.
+
+## Related Documentation
+
+- AI-assisted review and controlled automation: [AI-Assisted Review and Controlled Automation](./ai-assisted-review.md)
+- Reviewer registry and independent review pool: [Reviewer Registry and Independent Review Pool](./reviewer-registry.md)

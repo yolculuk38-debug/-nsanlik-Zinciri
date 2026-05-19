@@ -91,6 +91,7 @@ PYTHONPATH=src python -m hc_trust.cli verify records
 - Record format: [`docs/record-format.md`](docs/record-format.md)
 - Architecture roadmap (planned): [`docs/architecture-roadmap.md`](docs/architecture-roadmap.md)
 - AI-assisted review workflow: [`docs/ai-assisted-review.md`](docs/ai-assisted-review.md)
+- Reviewer registry and independent review pool: [`docs/reviewer-registry.md`](docs/reviewer-registry.md)
 - Release automation plan: [`docs/release-automation.md`](docs/release-automation.md)
 - examples: [`examples/`](examples/)
 - AI witness example: [`examples/ai_witness_example.json`](examples/ai_witness_example.json)
