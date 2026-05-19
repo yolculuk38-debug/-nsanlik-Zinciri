@@ -20,3 +20,4 @@ This roadmap outlines upcoming Trust Layer components for Humanity Chain.
 - [Record format (`record-v1`)](record-format.md)
 - [Limitations and risks](limitations-and-risks.md)
 - [Architecture roadmap (planned)](architecture-roadmap.md)
+- [Glossary and naming hierarchy](glossary.md)

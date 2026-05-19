@@ -53,6 +53,7 @@ python src/qr.py HC-CHATGPT-2026-0001 --output qr/HC-CHATGPT-2026-0001-demo.png
 - docs: [`docs/`](docs/)
 - QR verification: [`docs/qr-verification.md`](docs/qr-verification.md)
 - Witness layer: [`docs/witness-layer.md`](docs/witness-layer.md)
+- Glossary and naming hierarchy: [`docs/glossary.md`](docs/glossary.md)
 - Trust scoring: [`docs/trust-scoring.md`](docs/trust-scoring.md)
 - Limitations and risks: [`docs/limitations-and-risks.md`](docs/limitations-and-risks.md)
 - Record format: [`docs/record-format.md`](docs/record-format.md)
