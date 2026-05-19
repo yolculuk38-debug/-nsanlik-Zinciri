@@ -4,6 +4,10 @@
 
 > The visible architecture of digital trust.
 
+## Current Release
+
+[`v0.1.0`](https://github.com/yolculuk38-debug/HC-TRUST-LAYER/releases/tag/v0.1.0) is the first experimental stabilization release. It includes the visible verification flow and supports integrity and provenance as verification signals. Trust scoring and witness systems remain experimental.
+
 ## Visible Verification Flow (v0.1)
 
 For first-time visitors, the shortest path is:
