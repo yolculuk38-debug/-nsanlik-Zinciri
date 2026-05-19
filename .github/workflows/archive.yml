@@ -24,6 +24,9 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install Python Dependencies
+        run: pip install -r requirements.txt
+
       - name: Install QR Dependencies
         run: |
           pip install qrcode[pil]
