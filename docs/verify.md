@@ -40,3 +40,5 @@ GitHub currently acts as the public archive mirror layer for HC:// records.
 
 **Source archive:**
 `records/verified/HC-TEST-2026-0001.md`
+
+Verification badges: [`docs/verification-badges.md`](verification-badges.md).
