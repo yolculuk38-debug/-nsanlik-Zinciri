@@ -36,6 +36,12 @@ Verify a Record: [`docs/verify.md`](docs/verify.md).
 
 HC:// verifies integrity and provenance signals, not objective truth.
 
+## Verify a Record
+
+Start with the HC:// verification experience layer here: [`docs/verify.md`](docs/verify.md).
+
+GitHub currently acts as the public archive mirror layer for HC:// records.
+
 ## What Is HC:// TRUST LAYER
 
 HC:// TRUST LAYER is an experimental verification and provenance infrastructure for digital content in the AI era.

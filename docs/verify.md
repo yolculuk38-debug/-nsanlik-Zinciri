@@ -1,32 +1,42 @@
-# HC:// TRUST LAYER — Verify a Record
+# HC:// Verify Center
 
-This is the main verification page for QR-linked records.
+## What is HC verification?
 
-QR scans should feel like **HC:// verification**, not only a raw GitHub file view.
+HC verification helps people confirm that a record is authentic, intact, and publicly auditable without needing deep technical knowledge.
 
-## Verification Flow
+## Verification flow
 
-`QR scan → Verify Page → Record ID → Hash → Status → Source Record`
+QR Scan
+↓
+HC Verify Page
+↓
+Record Validation
+↓
+Witness Review
+↓
+Public Archive Proof
 
-## QR Verification Result (Example)
+## Record integrity
 
-### Sample Verification Card
+Record integrity checks whether the current record content matches its expected verification data and has not been altered since publication.
 
-- **Record ID:** `HC-TEST-2026-0001`
-- **Hash:** `sha256: see source record and hash registry`
-- **Status:** `VERIFIED`
-- **Source Record:** [`records/verified/HC-TEST-2026-0001.md`](../records/verified/HC-TEST-2026-0001.md)
+## Witness system
 
-## Related Links
+The witness system combines human and AI review signals to present who reviewed the record and how trust signals were produced.
 
-- Verified record: [`records/verified/HC-TEST-2026-0001.md`](../records/verified/HC-TEST-2026-0001.md)
-- Demo flow: [`docs/demo-flow.md`](demo-flow.md)
-- Trust score overview: [`docs/trust-score.md`](trust-score.md)
+## Public archive mirror
 
-## Archive And Portability Note
+GitHub currently acts as the public archive mirror layer for HC:// records.
 
-GitHub is currently used as the public archive mirror. HC:// verification is designed to become portable.
+## Visual verification example
 
-## Reminder
+**Record ID:** `HC-TEST-2026-0001`  
+**Status:** `VERIFIED`  
+**Integrity:** `PASS`
 
-HC:// verification confirms integrity and provenance signals, not objective truth.
+**Witnesses:**
+- Human reviewer
+- AI witness pool
+
+**Source archive:**
+`records/verified/HC-TEST-2026-0001.md`
