@@ -1,0 +1,23 @@
+{
+  "trust_engine_version": "trust-engine-v1-experimental",
+  "verification_id": "VR-HC-EXAMPLE-2026-0001",
+  "target_record": "HC-EXAMPLE-2026-0001",
+  "calculated_at": "2026-05-20T00:00:00Z",
+  "trust_score": 84,
+  "trust_band": "VERIFIED",
+  "layer_scores": {
+    "hash_integrity": 100,
+    "witness_diversity": 78,
+    "reviewer_reputation": 82,
+    "signature_validity": 95,
+    "timestamp_consistency": 88,
+    "append_only_consistency": 100,
+    "source_reputation": 74,
+    "ai_consensus": 80,
+    "human_consensus": 79
+  },
+  "manipulation_indicators": [
+    "duplicate_witnesses"
+  ],
+  "notes": "Experimental trust output for documentation and API compatibility planning."
+}

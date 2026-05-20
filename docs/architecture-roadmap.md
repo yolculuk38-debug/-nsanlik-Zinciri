@@ -63,6 +63,7 @@ They are explicitly not implemented production behavior in the current HC:// TRU
 - Signed witness model: [Signed Witness Model](./signed-witness-model.md)
 - Verification result standard (v1): [Verification Result Standard](./verification-result-standard.md)
 - Experimental trust score foundation: [HC:// Experimental Trust Score Foundation](./trust-score.md)
+- Experimental trust engine v1: [HC:// Experimental Trust Engine v1](./trust-engine-v1.md)
 - Related governance process: [AI-Assisted Review and Controlled Automation](./ai-assisted-review.md)
 - Reviewer registry and independent review pool: [Reviewer Registry and Independent Review Pool](./reviewer-registry.md)
 - Append-only review chain model: [Append-Only Review Chain Model](./append-only-review-chain.md)

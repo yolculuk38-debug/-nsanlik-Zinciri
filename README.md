@@ -94,6 +94,7 @@ PYTHONPATH=src python -m hc_trust.cli verify records
 - Witness layer: [`docs/witness-layer.md`](docs/witness-layer.md)
 - Glossary and naming hierarchy: [`docs/glossary.md`](docs/glossary.md)
 - Trust scoring: [`docs/trust-scoring.md`](docs/trust-scoring.md)
+- Experimental trust engine v1 (draft): [`docs/trust-engine-v1.md`](docs/trust-engine-v1.md)
 - Experimental trust score foundation: [`docs/trust-score.md`](docs/trust-score.md)
 - Limitations and risks: [`docs/limitations-and-risks.md`](docs/limitations-and-risks.md)
 - Record format: [`docs/record-format.md`](docs/record-format.md)

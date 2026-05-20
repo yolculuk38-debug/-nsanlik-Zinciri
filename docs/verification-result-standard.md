@@ -119,6 +119,7 @@ This standard is additive.
 
 - Verify center: [HC:// Verify Center](./verify.md)
 - Trust layer docs: [HC:// TRUST LAYER](./TRUST_LAYER.md)
+- Experimental trust engine v1: [HC:// Experimental Trust Engine v1](./trust-engine-v1.md)
 - Architecture planning: [Architecture Roadmap](./architecture-roadmap.md)
 - Signed witness concepts: [Signed Witness Model](./signed-witness-model.md)
 - Append-only review model: [Append-Only Review Chain Model](./append-only-review-chain.md)
