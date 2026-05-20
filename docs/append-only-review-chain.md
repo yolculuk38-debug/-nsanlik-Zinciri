@@ -120,6 +120,7 @@ This is a documentation-level model definition only.
 
 ## Related Documentation
 
+- Signed witness model: [Signed Witness Model](./signed-witness-model.md)
 - Trust score foundation: [HC:// Experimental Trust Score Foundation](./trust-score.md)
 - Reviewer registry: [Reviewer Registry and Independent Review Pool](./reviewer-registry.md)
 - Verify center overview: [HC:// Verify Center](./verify.md)
