@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hc.example/schema/verification-result-v1.schema.json",
+  "title": "HC:// Verification Result v1",
+  "description": "Reusable verification result structure for HC:// verification outputs.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "verification_id",
+    "target_record",
+    "verification_status",
+    "hash_match",
+    "signature_valid",
+    "reviewer_pool",
+    "consensus_score",
+    "manipulation_risk",
+    "timestamp",
+    "verification_version"
+  ],
+  "properties": {
+    "verification_id": {
+      "type": "string",
+      "description": "Unique identifier for this verification result event."
+    },
+    "target_record": {
+      "type": "string",
+      "description": "Record identifier or canonical reference that was verified."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "REVIEW_REQUIRED",
+        "DISPUTED",
+        "REVOKED",
+        "EXPERIMENTAL"
+      ],
+      "description": "High-level status outcome of the verification process."
+    },
+    "hash_match": {
+      "type": "boolean",
+      "description": "Whether computed hash matched the expected hash."
+    },
+    "signature_valid": {
+      "type": "boolean",
+      "description": "Whether associated signature checks were valid."
+    },
+    "reviewer_pool": {
+      "type": "array",
+      "description": "Reviewer identifiers or classes that contributed to this result.",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "consensus_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Normalized consensus score between 0 and 1."
+    },
+    "manipulation_risk": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ],
+      "description": "Risk interpretation for possible manipulation signals."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "RFC 3339 timestamp of result generation."
+    },
+    "verification_version": {
+      "type": "string",
+      "description": "Version label for this verification result standard."
+    }
+  }
+}

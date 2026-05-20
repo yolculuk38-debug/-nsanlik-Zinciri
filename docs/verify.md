@@ -46,4 +46,5 @@ Verification badges: [`docs/verification-badges.md`](verification-badges.md).
 ## Related Documentation
 
 - Append-only review chain model: [Append-Only Review Chain Model](./append-only-review-chain.md)
+- Verification result standard (v1): [Verification Result Standard](./verification-result-standard.md)
 

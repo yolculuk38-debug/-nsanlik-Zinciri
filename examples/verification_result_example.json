@@ -1,0 +1,15 @@
+{
+  "verification_id": "HCVR-2026-0001",
+  "target_record": "HC-TEST-2026-0001",
+  "verification_status": "VERIFIED",
+  "hash_match": true,
+  "signature_valid": true,
+  "reviewer_pool": [
+    "human-reviewer",
+    "ai-reviewer"
+  ],
+  "consensus_score": 0.92,
+  "manipulation_risk": "LOW",
+  "timestamp": "2026-05-20T00:00:00Z",
+  "verification_version": "v1"
+}

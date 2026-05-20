@@ -127,6 +127,7 @@ This is a documentation-level conceptual model only.
 ## Related Documentation
 
 - Append-only review chain model: [Append-Only Review Chain Model](./append-only-review-chain.md)
+- Verification result standard (v1): [Verification Result Standard](./verification-result-standard.md)
 - Reviewer registry and independent review pool: [Reviewer Registry and Independent Review Pool](./reviewer-registry.md)
 - Future architecture planning: [Architecture Roadmap](./architecture-roadmap.md)
 - Signed witness record format reference: [Experimental Signed Witness Record Format](./signed-witness-format.md)

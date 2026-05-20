@@ -89,6 +89,7 @@ PYTHONPATH=src python -m hc_trust.cli verify records
 - docs: [`docs/`](docs/)
 - Demo flow: [`docs/demo-flow.md`](docs/demo-flow.md)
 - Verify a Record: [`docs/verify.md`](docs/verify.md)
+- Verification result standard (v1): [`docs/verification-result-standard.md`](docs/verification-result-standard.md)
 - Verification result badges: [`docs/verification-badges.md`](docs/verification-badges.md)
 - Witness layer: [`docs/witness-layer.md`](docs/witness-layer.md)
 - Glossary and naming hierarchy: [`docs/glossary.md`](docs/glossary.md)
