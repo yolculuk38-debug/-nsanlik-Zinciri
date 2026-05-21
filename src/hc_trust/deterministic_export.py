@@ -3,47 +3,25 @@ from hashlib import sha256
 from typing import Dict
 
 
- 
-EXPORT_ENGINE_VERSION = "hc-export-v1-experimental"
-
-
-def canonical_export(data: Dict) -> str:
-    """Create a deterministic JSON export string."""
-
-
 EXPORT_ENGINE_VERSION = "hc-deterministic-export-v1-experimental"
 
 
 def canonical_export(data: Dict) -> str:
- 
+    """Create a deterministic JSON export string."""
     if not isinstance(data, dict):
         raise ValueError("data must be a dictionary")
 
-    return json.dumps(
-        data,
-        sort_keys=True,
-        separators=(",", ":"),
-        ensure_ascii=False,
-    )
+    return json.dumps(data, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
 
 
 def build_export_digest(data: Dict) -> str:
- 
     """Create a SHA-256 digest for a deterministic export."""
-
-
- 
     canonical = canonical_export(data)
     return sha256(canonical.encode("utf-8")).hexdigest()
 
 
- 
 def build_export_package(data: Dict) -> Dict:
     """Build a deterministic export package for HC:// verifier outputs."""
-
-
-def build_deterministic_export(data: Dict) -> Dict:
- 
     canonical = canonical_export(data)
     digest = build_export_digest(data)
 
@@ -53,20 +31,16 @@ def build_deterministic_export(data: Dict) -> Dict:
         "export_digest": digest,
         "export_size": len(canonical.encode("utf-8")),
         "deterministic": True,
-
         "experimental": True,
     }
 
 
 def verify_export_package(export_package: Dict) -> bool:
     """Verify export package integrity."""
-
-
-    }
+    return verify_export_integrity(export_package)
 
 
 def verify_export_integrity(export_package: Dict) -> bool:
-
     if not isinstance(export_package, dict):
         return False
 
